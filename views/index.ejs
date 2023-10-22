@@ -2,126 +2,131 @@
 <html>
   <head>
     <title>Check Weather</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+      rel="stylesheet"
+    />
     <style>
       * {
-      box-sizing: border-box;
+        box-sizing: border-box;
       }
-      html, body {
-      min-height: 100vh;
-      padding: 0;
-      margin: 0;
-      font-family: Roboto, Arial, sans-serif;
-      font-size: 14px; 
-      color: #666;
+      html,
+      body {
+        min-height: 100vh;
+        padding: 0;
+        margin: 0;
+        font-family: Roboto, Arial, sans-serif;
+        font-size: 14px;
+        color: #666;
       }
-      input, textarea { 
-      outline: none;
+      input,
+      textarea {
+        outline: none;
       }
       body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-      background: #4B515D;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background: #4b515d;
       }
       h1 {
-      margin-top: 0;
-      font-weight: 500;
+        margin-top: 0;
+        font-weight: 500;
       }
       form {
-      position: relative;
-      width: 80%;
-      border-radius: 30px;
-      background: #fff;
+        position: relative;
+        width: 80%;
+        border-radius: 30px;
+        background: #fff;
       }
       .form-left-decoration,
       .form-right-decoration {
-      content: "";
-      position: absolute;
-      width: 50px;
-      height: 20px;
-      border-radius: 20px;
-      background: #4B515D;
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 20px;
+        border-radius: 20px;
+        background: #4b515d;
       }
       .form-left-decoration {
-      bottom: 60px;
-      left: -30px;
+        bottom: 60px;
+        left: -30px;
       }
       .form-right-decoration {
-      top: 60px;
-      right: -30px;
+        top: 60px;
+        right: -30px;
       }
       .form-left-decoration:before,
       .form-left-decoration:after,
       .form-right-decoration:before,
       .form-right-decoration:after {
-      content: "";
-      position: absolute;
-      width: 50px;
-      height: 20px;
-      border-radius: 30px;
-      background: #fff;
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 20px;
+        border-radius: 30px;
+        background: #fff;
       }
       .form-left-decoration:before {
-      top: -20px;
+        top: -20px;
       }
       .form-left-decoration:after {
-      top: 20px;
-      left: 10px;
+        top: 20px;
+        left: 10px;
       }
       .form-right-decoration:before {
-      top: -20px;
-      right: 0;
+        top: -20px;
+        right: 0;
       }
       .form-right-decoration:after {
-      top: 20px;
-      right: 10px;
+        top: 20px;
+        right: 10px;
       }
       .circle {
-      position: absolute;
-      bottom: 80px;
-      left: -55px;
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background: #fff;
+        position: absolute;
+        bottom: 80px;
+        left: -55px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #fff;
       }
       .form-inner {
-      padding: 40px;
+        padding: 40px;
       }
       .form-inner input,
       .form-inner textarea {
-      display: block;
-      width: 100%;
-      padding: 15px;
-      margin-bottom: 10px;
-      border: none;
-      border-radius: 20px;
-      background: #d0dfe8;
+        display: block;
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 20px;
+        background: #d0dfe8;
       }
       .form-inner textarea {
-      resize: none;
+        resize: none;
       }
       button {
-      width: 100%;
-      padding: 10px;
-      margin-top: 20px;
-      border-radius: 20px;
-      border: none;
-      border-bottom: 4px solid #4B515D;
-      background: #4B515D; 
-      font-size: 16px;
-      font-weight: 400;
-      color: #fff;
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 20px;
+        border: none;
+        border-bottom: 4px solid #4b515d;
+        background: #4b515d;
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff;
       }
       button:hover {
-      background: #4B515D;
-      } 
-      @media (min-width: 568px) {
-      form {
-      width: 60%;
+        background: #4b515d;
       }
+      @media (min-width: 568px) {
+        form {
+          width: 60%;
+        }
       }
     </style>
   </head>
@@ -132,7 +137,7 @@
       <div class="circle"></div>
       <div class="form-inner">
         <h1>Check Weather</h1>
-        <input type="text" name="cityName">
+        <input type="text" name="cityName" />
         <button type="submit" name="submit">Go</button>
       </div>
     </form>
